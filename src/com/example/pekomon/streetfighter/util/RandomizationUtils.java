@@ -1,4 +1,4 @@
-package com.example.pekomon.streetfighter.Util;
+package com.example.pekomon.streetfighter.util;
 
 import java.util.concurrent.ThreadLocalRandom;
 
