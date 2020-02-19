@@ -1,4 +1,4 @@
-package com.example.pekomon.streetfighter;
+package com.example.pekomon.streetfighter.fighter;
 
 public class ArmoredFighter extends BaseFighter {
 
