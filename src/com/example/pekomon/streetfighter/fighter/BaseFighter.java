@@ -1,18 +1,19 @@
 package com.example.pekomon.streetfighter.fighter;
 
-import com.example.pekomon.streetfighter.Util.RandomizationUtils;
+import com.example.pekomon.streetfighter.util.RandomizationUtils;
 import com.example.pekomon.streetfighter.weapon.Weapon;
 
 public class BaseFighter {
 
     private String name;
-    private int life = 100;
+    private int life;
     private int power;
     private Weapon weapon;
 
     public BaseFighter(final String pName, final int pPower) {
         this.name = pName;
         this.power = pPower;
+        life = 100 + RandomizationUtils.getNumber(-20, 20);
     }
 
     public String getName() {
