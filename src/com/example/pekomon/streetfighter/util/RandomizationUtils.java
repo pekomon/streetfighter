@@ -17,12 +17,20 @@ public class RandomizationUtils {
      */
     public static boolean isLucky(final int pProbability, final int pMax) {
 
+        if (pProbability <= 0) {
+            return false;
+        }
+
         if (pProbability >= pMax) {
             return true;
         }
 
         final int randomNumber = ThreadLocalRandom.current().nextInt(pMax + 1);
         return pProbability > randomNumber;
+    }
+
+    public static boolean isLucky(final int pLuckyPercentage) {
+        return isLucky(pLuckyPercentage, 100);
     }
 
     public static int getPositiveNumber(final int pMax) {
